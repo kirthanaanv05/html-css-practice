@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning div,span,attributes and iframe</title>
+    <style>
+        .card{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        span{
+            color: red;
+            font-weight: bold;
+        }
+        #main-title{
+            color: purple;
+        }
+        .highlight{
+            color: blue;
+        }
+    </style>
+
+  </head>
+  <body>
+    <h1>Learning about div,span,attributes,entities and iframe</h1>
+    <!-- non-semantic elements - div and span -->
+    
+    <h2>Div</h2>
+    <div>
+        <h2>About me</h2>
+        <p>I am a web developer.</p>
+    </div>
+
+    <div class="card">
+        <h2>Java</h2>
+        <p>Java is a programming language.</p>
+    </div>
+    
+    <h2>Span</h2>
+    <p>I am learning <span>HTML</span>.</p>
+
+    <br>
+
+    <div>First</div>
+    <div>Second</div>
+
+    <br>
+
+    <span>First</span>
+    <span>Second</span>
+
+    <!-- attributes -->
+    <h2>Attributes</h2>
+    <h3>id</h3>
+    <p id="main-title">Welcome</p>
+
+    <h3>class</h3>
+    <p class="highlight">Thankyou</p>
+    <p class="highlight">Welcome</p>
+
+    <h3>title</h3>
+    <button title="click to submit the form">Submit</button>
+
+    <h3>style</h3>
+    <p style="color: green;">HTML provides the structure to the webpage.</p>
+
+    <h3>hidden</h3>
+    <p hidden>This content is hidden.</p>
+
+    <h3>data-*</h3>
+    <button data-user-id="101">view user</button>
+    <p>Here data-user-id is a custom data attribute.</p>
+
+    <h2>Boolean attributes</h2>
+    <input type="text" required placeholder="required">
+    <input type="text" disabled placeholder="disabled">
+    <input type="text" value="123-ABC" placeholder="readonly">
+    <input type="checkbox" checked>checked
+    
+    <!-- entities -->
+    <h2>HTML Entities</h2>
+    <p>5 &lt; 10</p>
+    <p>10 &gt; 5</p>
+    <p>Tom &amp; Jerry</p>
+    <p>The book titles as &quot;Wings of Fire&quot;</p>
+    <p>This is Sam&apos;s notebook.</p>
+    <p>Hello&nbsp;&nbsp;World</p>
+    <p>&copy; 2026 My Website</p>
+
+    <!-- iframe -->
+    <h2>iframe</h2>
+    <h3>Embed a youtube video</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/hN2bxgDbFUM?si=XTL2AwbjbnPLaCrK"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <br /><br />
+
+    <h3>Embed a map</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995978.445175155!2d76.543645746875!3d12.808291400000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6d7069d4ec39%3A0xa72f7607b6fc91f0!2sThe%20Rameshwaram%20Cafe%20%40%20Bommasandra!5e0!3m2!1sen!2sin!4v1790342822985!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </body>
+</html>
