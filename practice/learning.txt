@@ -1,0 +1,22 @@
+1. Personal Profile Card Component
+    A clean, responsive profile card component built with HTML5 and CSS3, featuring pill-style badges and smooth hover interactions.
+
+Overview:
+This project is a personal profile card component designed to showcase user details, skills, a short bio, and social media links in a self-contained, modern card layout.
+
+Technologies & features used:
+HTML5 structure:
+- Semantic structure using structured headings(`<h1>`, `<h2>`) and paragraphs(`<p>`).
+- Unordered lists(`<ul>`, `<li>`) for structured rendering of skills and social media links.
+- Image formatting(`<img>`) with circular avatar cropping and fallback `alt` attributes.
+
+CSS layout & styling:
+* Flexbox centering: Centered the layout vertically and horizontally on the viewport(`display:flex`,`justify-content:center`,`align-items:center`).
+* Flexbox badge layout: Utilized `flex-wrap: wrap` and `gap` properties on list elements for inline pill layout without manual margins.
+* Box model management: Applied universal `box-sizing: border-box` to ensure predictable padding and dimensions.
+* Interactive UI: Smooth hover state transitions (`transition: 0.2s ease`) on social link buttons.
+
+What I learnt:
+1. Using CSS flexbox `gap` on `ul` elements rather than applying manual margins to `<li>` elements.
+2. Combining `border-radius: 50%` with `object-fit:`cover` to preserve image aspect ratios regardless of source image dimensions.
+3. Applying pseudo-classes(`:hover`) alongside `transition` properties to enhance interface level.
