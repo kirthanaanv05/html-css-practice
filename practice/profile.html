@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f6f8;
+        }
+        .card{
+            background-color: #fff;
+            padding: 32px;
+            border-radius: 12px;
+            max-width: 360px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .head{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 1.4rem;
+            margin: 12px 0 4px 0;
+            color: #0f172a;
+        }
+        .title{
+            margin: 0 0 12px 0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        h2{
+            font-size: 0.95rem;
+            margin: 20px 0 8px 0;
+            color: #334155;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        p{
+            color: #475569;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .skills-list li{
+            background-color: #e0e7ff;
+            color: #3730a3;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .social-list a{
+            display: inline-block;
+            text-decoration: none;
+            color: #6366f1;
+            border: 1px solid #6366f1;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .social-list a:hover{
+            background-color: #6366f1;
+            color: #fff;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="card"> 
+      <div class="head">
+        <img src="images/profile-pic.avif" alt="My Profile Photo">
+        <h1>Kirthanaa</h1>
+        <p class="title">Frontend Developer</p>
+      </div>
+      <h2>Skills:</h2>
+      <ul class="skills-list">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+      </ul>
+        <h2>My Bio:</h2>
+        <p>
+          I am a frontend developer where I'm expertised in HTML, CSS,
+          JavaScript, React.js and other frontend tools.
+        </p>
+      <h2>Follow me on:</h2>
+      <ul class="social-list">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
