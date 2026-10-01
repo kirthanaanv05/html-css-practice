@@ -1,4 +1,4 @@
-1. Personal Profile Card Component
+I. Personal Profile Card Component
     A clean, responsive profile card component built with HTML5 and CSS3, featuring pill-style badges and smooth hover interactions.
 
 Overview:
@@ -20,3 +20,29 @@ What I learnt:
 1. Using CSS flexbox `gap` on `ul` elements rather than applying manual margins to `<li>` elements.
 2. Combining `border-radius: 50%` with `object-fit:`cover` to preserve image aspect ratios regardless of source image dimensions.
 3. Applying pseudo-classes(`:hover`) alongside `transition` properties to enhance interface level.
+
+
+II. Purchase Point - Product List Component
+    A responsive feature/product showcase list built with modern HTML5 and CSS flexbox layout techniques, featuring thumbnail previews, tag badges, and 
+    smooth hover elevation effects.
+
+Overview:
+This project is a modern product feature list layout designed to display e-commerce items(cosmetics,electronics and home essentials). The layout organizes 
+product media,titles,and descriptive copy and status badges into clean, interactive card rows.
+
+Technologies & features used:
+HTML5 structure:
+- Utilized `<header>`,`<main>`,`<section>` and `<footer>` tags to ensure clear document outline and accessibility.
+- Organized individual product items using unordered lists(`<ul>`,`<li>`) with semantic headings(`<h1>`,`<h2>`,`<h3>`).
+- Used `<img>` tags for product thumbnails with contextual `alt` attributes,paired with inline `<span>` elements for badge indicators.
+
+CSS Layout:
+* Centered body content using vertical/horizontal flexbox properties(`display:flex`,`flex-direction:column`,`align-items:center`).
+* Aligned list items horizontally using flexbox with fixed `gap` spacing to keep icons, text and badges aligned.
+* Applied `margin-left: auto` on `.badge` elements to push status indicators cleanly to the far right of each card.
+* Implemented `transform: translateY(-2px)` combined with subtle box-shadow updates (`box-shadow: 0 4px 12px rgba(0,0,0,0.08)`) for elevation effects on cursor hover.
+
+What I learnt:
+1. Using `margin-left: auto` inside a flexbox container to align an element(like a badge) to the trailing edge without absolute positioning.
+2. Applying `flex-shrink: 0` to product images so they retain their fixed dimensions even when textual content expands.
+3. Combining CSS `transform:translateY()` and box-shadows to build clean, responsive micro-interactions.
