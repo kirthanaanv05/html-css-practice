@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Point🛒</title>
+    <style>
+        *,*::before, *,*::after{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            background-color: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+            padding: 40px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header{
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        header h1{
+            margin: 0 0 6px 0;
+            font-size: 1.75rem;
+            color: #0f172a;
+        }
+        header p{
+            margin: 0;
+            color:#64748b;
+            font-size: 0.95rem;
+        }
+        main{
+            max-width: 600px;
+            width: 100%;
+        }
+        section h2{
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            color: #334155;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        li{
+            background-color: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        li:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .feature-icon{
+            width: 52px;
+            height: 52px;
+            border-radius: 8px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .feature-content{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .feature-content h3{
+            margin: 0;
+            font-size: 1rem;
+            color: #0f172a;
+        }
+        .feature-content p{
+            margin: 0;
+            font-size: 0.875rem;
+            color: #63738b;
+            line-height: 1.5;
+        }
+        .badge{
+            margin-left: auto;
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .badge-popular{
+            background-color: #ede9fe;
+            color: #5b21b6;
+        }
+        .badge-new{
+            background-color: #d1fae5;
+            color: #5b21b6;
+        }
+        .badge-beta{
+            background-color: #e0f2fe;
+            color: #0369a1;
+        }
+        footer{
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Purchase Point</h1>
+        <p>Buy it! Enjoy using it!</p>
+    </header>
+    <main>
+        <section>
+            <h2>New Arrivals</h2>
+            <ul>
+                <li>
+                    <img src="images/foundation.jfif" alt="Nars foundation" class="feature-icon">
+                    <div class="feature-content">
+                        <h3>Foundation</h3>
+                        <p>Best foundation for daily use or any festive seasons.</p>
+                    </div>
+                    <span class="badge badge-popular">Popular</span>
+                </li>
+                <li>
+                    <img src="images/hair-dryer.jfif" alt="Havells hair dryer" class="feature-icon">
+                    <div class="feature-content">
+                        <h3>Hair Dryer</h3>
+                    <p>Fastest hair dryer that drys your hair in seconds.</p>
+                    </div>
+                    <span class="badge badge-new">New</span>
+                </li>
+                <li>
+                    <img src="images/perfume.jfif" alt="Naseem perfume" class="feature-icon">
+                    <div class="feature-content">
+                        <h3>Perfume</h3>
+                        <p>Naseem - French Vanilla - You'll fell in love for sure!</p>
+                    </div>
+                    <span class="badge badge-beta">Beta</span>
+                </li>
+                <li>
+                    <img src="images/mop-stick.jfif" alt="Ultra mop stick" class="feature-icon">
+                    <div class="feature-content">
+                        <h3>Mop Stick</h3>
+                        <p>Ultra Mop Stick - Ultra clean!</p>
+                    </div>
+                    <span class="badge badge-popular">Popular</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Purchase Point</p>
+    </footer>
+</body>
+</html>
