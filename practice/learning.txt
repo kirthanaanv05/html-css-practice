@@ -46,3 +46,28 @@ What I learnt:
 1. Using `margin-left: auto` inside a flexbox container to align an element(like a badge) to the trailing edge without absolute positioning.
 2. Applying `flex-shrink: 0` to product images so they retain their fixed dimensions even when textual content expands.
 3. Combining CSS `transform:translateY()` and box-shadows to build clean, responsive micro-interactions.
+
+III. Pricing plan card component
+     A modern, responsive subscription pricing card built with semantic HTML5 and CSS flexbox, featuring absolute positioning badges and typography alignment.
+
+Overview:
+This project displays a subscription tier card ("Pro plan") designed for SaaS platforms or developer tools. It emphasizes hierarchy through distinct price typrography, 
+checked feature lists, a call-to-action button, and an absolute-positioned highlight badge.
+
+Technologies & features Used:
+HTML5 structure:
+- `<article>` wrapper tag to represent a self-contained pricing component.
+- Heading structure `<h2>` with clear sectioning for title, pricing block and feature lists.
+- HTML entity codes (`&dollar;` and `&check;`) for scalable symbols and checkmark icons.
+
+CSS layout:
+* Used `position:relative` on `.pricing-card` and `position:absolute` with negative offset (`top:-12px`) to anchor the "Most Popular" badge across the card boundary.
+* Applied `align-items: baseline` in `.price-container` so the currency symbol (`$`),price (`29`) and billing period(`/month`) align neatly along their text baselines despite 
+having vast different font sizes(`1.5rem` vs `3rem`).
+* Smooth `:hover` and `:active` CSS state transitions with elevated box-shadows(`rgba(63,51,224,0.35)`) and slight vertical movement(`transform:translateY(-2px)`).
+* Utilized container `gap` properties(`gap: 24px` on card wrapper,`gap:12px` on feature lists) for modular UI spacing.
+
+What I learnt:
+1. Learning how `align-items:baseline` solves awkard text misalignment when pairing large numbers with smaller labels or currency symbols.
+2. Understanding how absolute positioning (`top:-12px`) relative to a parent container creates overlapping badge tags without altering content flow.
+3. Using the `:active` pseudo-class (`transform: translateY(0)`) to provide instant visual tactile feedback when clicking buttons.
