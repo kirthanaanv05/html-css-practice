@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plan Card</title>
+    <style>
+        *,*::before, *,*::after{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #deecfa;
+            padding: 20px;
+        }
+        .pricing-card{
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 36px 28px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05),
+                        0 8px 10px -6px rgba(0,0,0,0.01);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            position: relative;
+        }
+        .badge-top{
+            position: absolute;
+            top: -12px;
+            right: 28px;
+            background-color: #065db4;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 12px;
+            border-radius: 999px;
+        }
+        .card-header h2{
+            margin: 0 0 6px 0;
+            font-size: 1.5rem;
+            color: #0f172a;
+        }
+        .card-header p{
+            margin: 0;
+            color: #64748b;
+            font-size: 0.925rem;
+        }
+        .price-container{
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 20px;
+        }
+        .currency{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .amount{
+            font-size: 3rem;
+            font-weight: 800;
+            color: #0f172a;
+            line-height: 1;
+        }
+        .period{
+            color: #64748b;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .features-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .features-list li{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #334155;
+            font-size: 0.95rem;
+        }
+        .check-icon{
+            color: #065db4;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .cta-button{
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #065db4;
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            box-shadow: 0 4px 12px rgba(63, 51, 224, 0.35);
+        }
+        .cta-button:hover{
+            background-color: #0d5094;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(63, 51, 224, 0.35);
+        }
+        .cta-button:active{
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <article class="pricing-card">
+        <span class="badge-top">
+            Most Popular
+        </span>
+        <div class="card-header">
+            <h2>Pro Plan</h2>
+            <p>Perfecet for growing projects and full-stack developers.</p>
+        </div>
+
+        <div class="price-container">
+            <span class="currency">&dollar;</span>
+            <span class="amount">29</span>
+            <span class="period">/ month</span>
+        </div>
+
+        <ul class="features-list">
+            <li><span class="check-icon">&check;</span>Unlimited public projects</li>
+            <li><span class="check-icon">&check;</span>10 GB Cloud Storage</li>
+            <li><span class="check-icon">&check;</span>Custom domains & SSL</li>
+            <li><span class="check-icon">&check;</span>Advanced Analytics</li>
+            <li><span class="check-icon">&check;</span>24/7 Priority support</li>
+        </ul>
+
+        <a href="#" class="cta-button">Get Started Now</a>
+    </article>
+</body>
+</html>
